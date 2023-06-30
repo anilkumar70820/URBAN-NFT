@@ -27,7 +27,7 @@
 
 <body class="bg-EDF1F2">
     <div class="d-flex">
-        <div class="side-bar sm-side-bar position-relativ h-100vh overflow-y-scroll" id="mySidenav">
+        <div class="side-bar sm-side-bar h-100vh overflow-y-scroll" id="mySidenav">
             <div class="position-relative">
                 <span class="closebtn d-md-none cursor-pointer z-3" onclick="closenav()">&times;</span>
                 <img class="position-absolute line-abs w-100" src="/assets/img/svg/lines-decor.svg" alt="lines-decor">
@@ -185,12 +185,12 @@
                 </div>
             </div>
         </div>
-        <div class="d-flex flex-column overflow-y-scroll h-100vh">
+        <div class="d-flex flex-column overflow-y-scroll h-100vh w-100">
             <header class="py-4 mb-3 position-sticky top-0 z-1 bg-EDF1F2">
                 <div class="my-container">
                     <div class="d-flex align-items-center justify-content-between">
                         <span class="d-md-none me-2" style="font-size:30px;cursor:pointer"
-                            onclick=" navresponsive()">&#9776;</span>
+                            onclick=" opennav()">&#9776;</span>
                         <div class="d-flex align-items-center search-bar cursor-pointer"><span><img class="me-2"
                                     src="/assets/img/svg/search.svg" alt="search"></span><input
                                 class="ff-Libre-Franklin fs-lg fw-normal text-A5A3A9" type="search"
@@ -198,11 +198,11 @@
                             <img class="ms-2 cursor-pointer" src="/assets/img/svg/filter.svg" alt="filter">
                         </div>
                         <div class="d-flex align-items-center">
-                            <span class="me-4 cursor-pointer"><img
+                            <span class="me-4 ms-sm-0 ms-2 cursor-pointer"><img
                                     src="/assets/img/svg/services/Essentials/lifebuoy.svg" alt="services"></span>
                             <span class="cursor-pointer"><img src="/assets/img/svg/bell-icon/bell.svg"
                                     alt="bell-icon"></span>
-                            <div class="d-flex align-items-center ms-5 ps-4 cursor-pointer">
+                            <div class="d-flex align-items-center ms-sm-5 ps-sm-4 ps-2 cursor-pointer">
                                 <img src="/assets/img/svg/user-avtar.svg" alt="user-avtar">
                                 <div class="ms-3 d-lg-block d-none">
                                     <h2 class="ff-Libre-Franklin fs-lg fw-bold text-474749 mb-0">Cody Fisher</h2>
@@ -215,361 +215,342 @@
                     </div>
                 </div>
             </header>
-            <div class="d-flex">
-                <section>
-                    <div class="my-container">
-                        <div class="row ps-2">
-                            <div class="col-xxl-8 col-12 mb-5 mb-xxl-0">
-                                <div class="row pt-4 position-relative row-bg">
-                                    <div class="col-lg-6 col-12 mt-5">
-                                        <h3 class="ff-inter fw-medium fs-xlg text-ffc881 mb-4 pb-1 ps-5">Create
-                                            MetroVerse
-                                            Genesis
-                                        </h3>
-                                        <p class="ff-inter fw-medium text-7c7c7c fs-md pb-1 mb-4 ps-5">physical
-                                            claim
-                                            for issue
-                                            #1
-                                            now
-                                            live.
-                                            please
-                                            check <span class="d-block">that the token is available for claim via
-                                                website</span></p>
-                                        <button
-                                            class="text-fffffff fs-lg ff-inter fw-medium explorer-btn border-0 mb-3 ms-5">Explorer
-                                            Now</button>
-                                        <div
-                                            class="detail-box d-flex align-items-center justify-content-between ms-4 mb-5">
-                                            <div class="mb-3">
-                                                <h2
-                                                    class="ff-inter fw-bold fs-md text-ffc881 mb-0 text-center line-height">
-                                                    24.8K
-                                                </h2>
-                                                <p
-                                                    class="ff-inter fw-medium fs-sm text-828282 mb-0 text-center line-height">
-                                                    items
-                                                </p>
-                                            </div>
-                                            <div class="line"></div>
-                                            <div class="mb-3">
-                                                <h2
-                                                    class="ff-inter fw-bold fs-md text-ffc881 mb-0 text-center line-height">
-                                                    4,1K
-                                                </h2>
-                                                <p
-                                                    class="ff-inter fw-medium fs-sm text-828282 mb-0 text-center line-height">
-                                                    Owners
-                                                </p>
-                                            </div>
-                                            <div class="line"></div>
-                                            <div class="mb-3">
-                                                <h2
-                                                    class="ff-inter fw-bold fs-md text-ffc881 mb-0 text-center line-height">
-                                                    0.221K
-                                                </h2>
-                                                <p
-                                                    class="ff-inter fw-medium fs-sm text-828282 mb-0 text-center line-height">
-                                                    Floor
-                                                    Price
-                                                </p>
-                                            </div>
-                                            <div class="line"></div>
-                                            <div class="mb-3">
-                                                <h2
-                                                    class="ff-inter fw-bold fs-md text-ffc881 mb-0 text-center line-height">
-                                                    43.1K
-                                                </h2>
-                                                <p
-                                                    class="ff-inter fw-medium fs-sm text-828282 mb-0 text-center line-height">
-                                                    Volume
-                                                    Traded</p>
-                                            </div>
+            <section>
+                <div class="my-container">
+                    <div class="row">
+                        <div class="col-xxl-8 col-12 mb-5 mb-xxl-0">
+                            <div class="row pt-4 position-relative row-bg justify_content_center">
+                                <div class="col-lg-6 col-12 mt-5 d-flex flex-column align-items-center">
+                                    <h3 class="ff-inter fw-medium fs-xlg text-ffc881 mb-4 pb-1 ps-5">Create
+                                        MetroVerse
+                                        Genesis
+                                    </h3>
+                                    <p class="ff-inter fw-medium text-7c7c7c fs-md pb-1 mb-4 ps-5">physical
+                                        claim
+                                        for issue
+                                        #1
+                                        now
+                                        live.
+                                        please
+                                        check <span class="d-block">that the token is available for claim via
+                                            website</span></p>
+                                    <button
+                                        class="text-fffffff fs-lg ff-inter fw-medium explorer-btn border-0 mb-3 ms-5">Explorer
+                                        Now</button>
+                                    <div class="detail-box d-flex align-items-center justify-content-between ms-4 mb-5">
+                                        <div class="mb-3">
+                                            <h2 class="ff-inter fw-bold fs-md text-ffc881 mb-0 text-center line-height">
+                                                24.8K
+                                            </h2>
+                                            <p
+                                                class="ff-inter fw-medium fs-sm text-828282 mb-0 text-center line-height">
+                                                items
+                                            </p>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-6 col-12 slider-abs">
-                                        <div class="d-flex mb-4 pb-1 pe-2 justify-content-xl-end">
-                                            <img class="me-4 prev cursor-pointer"
-                                                src="/assets/img/svg/left-arrow/Iconly/Bulk/Iconly/Bulk/Arrow - Left Square.svg"
-                                                alt="left-arrow">
-                                            <img class="next cursor-pointer"
-                                                src="/assets/img/svg/right-arrow/Iconly/Bulk/Iconly/Bulk/Arrow - Right Square.svg"
-                                                alt="right-arrow">
+                                        <div class="line"></div>
+                                        <div class="mb-3">
+                                            <h2 class="ff-inter fw-bold fs-md text-ffc881 mb-0 text-center line-height">
+                                                4,1K
+                                            </h2>
+                                            <p
+                                                class="ff-inter fw-medium fs-sm text-828282 mb-0 text-center line-height">
+                                                Owners
+                                            </p>
                                         </div>
-                                        <div>
-                                            <img class="img-radius" src="/assets/img/png/Group.png" alt="#">
+                                        <div class="line"></div>
+                                        <div class="mb-3">
+                                            <h2 class="ff-inter fw-bold fs-md text-ffc881 mb-0 text-center line-height">
+                                                0.221K
+                                            </h2>
+                                            <p
+                                                class="ff-inter fw-medium fs-sm text-828282 mb-0 text-center line-height">
+                                                Floor
+                                                Price
+                                            </p>
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="mb-3">
+                                            <h2 class="ff-inter fw-bold fs-md text-ffc881 mb-0 text-center line-height">
+                                                43.1K
+                                            </h2>
+                                            <p
+                                                class="ff-inter fw-medium fs-sm text-828282 mb-0 text-center line-height">
+                                                Volume
+                                                Traded</p>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-xxl-4 col-12">
-                                <h2 class="fs-xlg ff-inter fw-semibold text-4f4f4f ms-3 mt-0">New NFTs</h2>
-                                <div class="new-nft-box d-flex align-items-center ms-3 mb-2 mt-3">
-                                    <img class="me-2 pe-1" src="/assets/img/png/new-nft-1.png" alt="new-nft">
-                                    <div class="w-100">
-                                        <p class="ff-inter fw-medium fs-xsm text-7c7c7c mb-2">Metroverse Genesis</p>
-                                        <h2 class="fs-lg ff-inter fw-bold text-474749 mb-2 mt-0">Block #1460</h2>
-                                        <p class="fs-xsm fw-medium ff-inter text-7c7c7c mb-2">Owned by <span
-                                                class="fs-xsm fw-medium ff-inter text-ffc881">BabyKee</span></p>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <p class="ff-inter fs-lg fw-medium text-130f26 mb-0"><span><img
-                                                        src="/assets/img/svg/heart/Heart.svg" alt="heart"></span>1K</p>
-                                            <p class="ff-inter fs-lg fw-medium text-130f26 mb-0"><span><img
-                                                        src="/assets/img/svg/comment.svg" alt="comment"></span>21</p>
-                                        </div>
+                                <div class="col-lg-6 col-12 slider-abs d-flex flex-column align-items-center">
+                                    <div class="d-flex mb-4 pb-1 pe-2 justify-content-xl-end">
+                                        <img class="me-4 prev cursor-pointer"
+                                            src="/assets/img/svg/left-arrow/Iconly/Bulk/Iconly/Bulk/Arrow - Left Square.svg"
+                                            alt="left-arrow">
+                                        <img class="next cursor-pointer"
+                                            src="/assets/img/svg/right-arrow/Iconly/Bulk/Iconly/Bulk/Arrow - Right Square.svg"
+                                            alt="right-arrow">
                                     </div>
-                                </div>
-                                <div class="new-nft-box d-flex align-items-center ms-3 mb-2">
-                                    <img class="me-2 pe-1" src="/assets/img/png/new-nft-2.png" alt="new-nft">
-                                    <div class="w-100">
-                                        <p class="ff-inter fw-medium fs-xsm text-7c7c7c mb-2">Metroverse Genesis</p>
-                                        <h2 class="fs-lg ff-inter fw-bold text-474749 mb-2 mt-0">Block #1460</h2>
-                                        <p class="fs-xsm fw-medium ff-inter text-7c7c7c mb-2">Owned by <span
-                                                class="fs-xsm fw-medium ff-inter text-ffc881">BabyKee</span></p>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <p class="ff-inter fs-lg fw-medium text-130f26 mb-0"><span><img
-                                                        src="/assets/img/svg/heart/Heart.svg" alt="heart"></span>1K</p>
-                                            <p class="ff-inter fs-lg fw-medium text-130f26 mb-0"><span><img
-                                                        src="/assets/img/svg/comment.svg" alt="comment"></span>21</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="new-nft-box d-flex align-items-center ms-3">
-                                    <img class="me-2 pe-1" src="/assets/img/png/new-nft-3.png" alt="new-nft">
-                                    <div class="w-100">
-                                        <p class="ff-inter fw-medium fs-xsm text-7c7c7c mb-2">Metroverse Genesis</p>
-                                        <h2 class="fs-lg ff-inter fw-bold text-474749 mb-2 mt-0">Block #1460</h2>
-                                        <p class="fs-xsm fw-medium ff-inter text-7c7c7c mb-2">Owned by <span
-                                                class="fs-xsm fw-medium ff-inter text-ffc881">BabyKee</span></p>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <p class="ff-inter fs-lg fw-medium text-130f26 mb-0"><span><img
-                                                        src="/assets/img/svg/heart/Heart.svg" alt="heart"></span>1K</p>
-                                            <p class="ff-inter fs-lg fw-medium text-130f26 mb-0"><span><img
-                                                        src="/assets/img/svg/comment.svg" alt="comment"></span>21</p>
-                                        </div>
+                                    <div>
+                                        <img class="img-radius" src="/assets/img/png/Group.png" alt="#">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-xxl-8 col-12">
-                                <div class="d-flex justify-content-between align-items-center mt-5 pt-3 mb-3">
-                                    <h3 class="fs-xlg ff-inter fw-semibold text-4f4f4f">Top Collections</h3>
-                                    <p class="fs-md ff-inter fw-semibold text-4f4f4f mb-0 cursor-pointer"> View All<span
-                                            class="ps-1 ms-2"><svg width="16" height="16" viewBox="0 0 16 16"
-                                                fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M13.167 7.81706L3.16699 7.81706" stroke="#130F26"
-                                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                <path d="M9.13379 3.80083L13.1671 7.81683L9.13379 11.8335"
-                                                    stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
-                                        </span></p>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xl-4 col-sm-6 col-12 mb-5 mb-xl-0">
-                                        <div class="position-relative collection overflow-hidden">
-                                            <img class="collection-img w-100" src="/assets/img/png/collection-1.png"
-                                                alt="1">
-                                            <div class="position-absolute collection-abs collection-box ">
-                                                <div class="position-relative">
-                                                    <div class="d-flex justify-content-center">
-                                                        <img class="position-absolute small-img-abs"
-                                                            src="/assets/img/png/collection-a.png" alt="collection">
-                                                    </div>
-                                                    <h2
-                                                        class="ff-inter fs-xlg fw-semibold text-fffffff text-center mt-4">
-                                                        Jozo
-                                                        Gators</h2>
-                                                    <p class="fs-xmd ff-inter text-fffffff text-center">1.1K</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-sm-6 col-12 mb-5 mb-xl-0">
-                                        <div class="position-relative collection overflow-hidden">
-                                            <img class="collection-img w-100" src="/assets/img/png/collection-2.png"
-                                                alt="1">
-                                            <div class="position-absolute collection-abs collection-box ">
-                                                <div class="position-relative">
-                                                    <div class="d-flex justify-content-center">
-                                                        <img class="position-absolute small-img-abs"
-                                                            src="/assets/img/png/collection-b.png" alt="collection">
-                                                    </div>
-                                                    <h2
-                                                        class="ff-inter fs-xlg fw-semibold text-fffffff text-center mt-4">
-                                                        PXN:
-                                                        Ghost
-                                                        Division</h2>
-                                                    <p class="fs-xmd ff-inter text-fffffff text-center">10K</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-sm-6 col-12 mb-5 mb-xl-0">
-                                        <div class="position-relative collection overflow-hidden">
-                                            <img class="collection-img w-100" src="/assets/img/png/collection-3.png"
-                                                alt="1">
-                                            <div class="position-absolute collection-abs collection-box ">
-                                                <div class="position-relative">
-                                                    <div class="d-flex justify-content-center">
-                                                        <img class="position-absolute small-img-abs"
-                                                            src="/assets/img/png/collection-c.png" alt="collection">
-                                                    </div>
-                                                    <h2
-                                                        class="ff-inter fs-xlg fw-semibold text-fffffff text-center mt-4">
-                                                        Ragnarok
-                                                        Meta</h2>
-                                                    <p class="fs-xmd ff-inter text-fffffff text-center">7.8K</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center mt-5 mb-3">
-                                    <h3 class="fs-xlg ff-inter fw-semibold text-4f4f4f">Trendings NFTs</h3>
-                                    <p class="ff-inter fs-md fw-semibold text-4f4f4f mb-0 cursor-pointer">Marketplace
-                                        <span class="ps-1 ms-2"><svg width="16" height="16" viewBox="0 0 16 16"
-                                                fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M13.167 7.81706L3.16699 7.81706" stroke="#130F26"
-                                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                <path d="M9.13379 3.80083L13.1671 7.81683L9.13379 11.8335"
-                                                    stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
-                                        </span>
-                                    </p>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xl-4 col-sm-6 mb-5 mb-xl-0">
-                                        <div class="position-relative collection overflow-hidden">
-                                            <img class="collection-img w-100" src="/assets/img/png/nft-1.png" alt="nft">
-                                            <div class="position-absolute collection-abs collection-box ">
-                                                <div class="position-relative">
-                                                    <div class="d-flex justify-content-center">
-                                                        <img class="position-absolute small-img-abs"
-                                                            src="/assets/img/png/nft-a.png" alt="nft">
-                                                    </div>
-                                                    <h2
-                                                        class="ff-inter fs-xlg fw-semibold text-fffffff text-center mt-4">
-                                                        Noryoz
-                                                    </h2>
-                                                    <p class="fs-xmd ff-inter text-fffffff text-center">1.8K</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-sm-6 mb-5 mb-xl-0">
-                                        <div class="position-relative collection overflow-hidden">
-                                            <img class="collection-img w-100" src="/assets/img/png/nft-2.png" alt="nft">
-                                            <div class="position-absolute collection-abs collection-box ">
-                                                <div class="position-relative">
-                                                    <div class="d-flex justify-content-center">
-                                                        <img class="position-absolute small-img-abs"
-                                                            src="/assets/img/png/nft-b.png" alt="nft">
-                                                    </div>
-                                                    <h2
-                                                        class="ff-inter fs-xlg fw-semibold text-fffffff text-center mt-4">
-                                                        Bored
-                                                        Ape
-                                                        Solana Club</h2>
-                                                    <p class="fs-xmd ff-inter text-fffffff text-center">6.0K</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-sm-6 mb-5 mb-xl-0">
-                                        <div class="position-relative collection overflow-hidden">
-                                            <img class="collection-img w-100" src="/assets/img/png/nft-3.png" alt="nft">
-                                            <div class="position-absolute collection-abs collection-box ">
-                                                <div class="position-relative">
-                                                    <div class="d-flex justify-content-center">
-                                                        <img class="position-absolute small-img-abs"
-                                                            src="/assets/img/png/nft-c.png" alt="nft">
-                                                    </div>
-                                                    <h2
-                                                        class="ff-inter fs-xlg fw-semibold text-fffffff text-center mt-4">
-                                                        Boryoku
-                                                        Dragonz</h2>
-                                                    <p class="fs-xmd ff-inter text-fffffff text-center">7.8K</p>
-                                                </div>
-                                            </div>
-                                        </div>
+                        <div class="col-xxl-4 col-12 d-flex flex-column align-items-center">
+                            <h2 class="fs-xlg ff-inter fw-semibold text-4f4f4f ms-3 mt-0">New NFTs</h2>
+                            <div class="new-nft-box d-flex align-items-center ms-3 mb-2 mt-3">
+                                <img class="me-2 pe-1" src="/assets/img/png/new-nft-1.png" alt="new-nft">
+                                <div class="w-100">
+                                    <p class="ff-inter fw-medium fs-xsm text-7c7c7c mb-2">Metroverse Genesis</p>
+                                    <h2 class="fs-lg ff-inter fw-bold text-474749 mb-2 mt-0">Block #1460</h2>
+                                    <p class="fs-xsm fw-medium ff-inter text-7c7c7c mb-2">Owned by <span
+                                            class="fs-xsm fw-medium ff-inter text-ffc881">BabyKee</span></p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="ff-inter fs-lg fw-medium text-130f26 mb-0"><span><img
+                                                    src="/assets/img/svg/heart/Heart.svg" alt="heart"></span>1K</p>
+                                        <p class="ff-inter fs-lg fw-medium text-130f26 mb-0"><span><img
+                                                    src="/assets/img/svg/comment.svg" alt="comment"></span>21</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xxl-4 col-12">
-                                <div class="pt-4">
-                                    <div class="history-box ms-3 mt-5">
-                                        <div class="px-4">
-                                            <div class="d-flex justify-content-between align-items-center mb-4 pb-2">
-                                                <h2 class="ff-inter fs-xlg fw-medium text-4f4f4f">History</h2>
-                                                <select
-                                                    class="ff-inter fs-md text-4f4f4f last-month-btn cursor-pointer">Last
-                                                    Month <span><svg width="12" height="8" viewBox="0 0 12 8"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M10.6673 1.66663L6.00065 6.33329L1.33398 1.66663"
-                                                                stroke="#7C7C7C" stroke-width="1.5"
-                                                                stroke-linecap="round" stroke-linejoin="round" />
-                                                        </svg>
-                                                    </span>
-                                                    <option>Last Month</option>
-                                                    <option>Last 3 Month</option>
-                                                    <option>Last 6 Month</option>
-                                                    <option>Last Year</option>
-                                                </select>
-                                            </div>
-                                            <div class="d-flex align-items-center mb-3">
-                                                <img class="me-2 pe-1" src="/assets/img/svg/history-1.svg"
-                                                    alt="history">
-                                                <div class="d-flex align-items-center justify-content-between w-100">
-                                                    <div>
-                                                        <h4 class="ff-inter fs-lg fw-bold text-474749">Cet #6882</h4>
-                                                        <h5 class="ff-inter fs-md text-474749">Cets on Creck</h5>
-                                                    </div>
-                                                    <p class="ms-3"><img src="/assets/img/svg/comment.svg"
-                                                            alt="comment">250
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex align-items-center mb-3">
-                                                <img class="me-2 pe-1" src="/assets/img/svg/history-2.svg"
-                                                    alt="history">
-                                                <div class="d-flex align-items-center justify-content-between w-100">
-                                                    <div>
-                                                        <h4 class="ff-inter fs-lg fw-bold text-474749">Bored Ape #981
-                                                        </h4>
-                                                        <h5 class="ff-inter fs-md text-474749">Bored Ape Solana Club
-                                                        </h5>
-                                                    </div>
-                                                    <p><img src="/assets/img/svg/comment.svg" alt="comment">38</p>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex align-items-center mb-5 pb-4">
-                                                <img class="me-2 pe-1" src="/assets/img/svg/history-3.svg"
-                                                    alt="history">
-                                                <div class="d-flex align-items-center justify-content-between w-100">
-                                                    <div>
-                                                        <h4 class="ff-inter fs-lg fw-bold text-474749">SolPunk #7803
-                                                        </h4>
-                                                        <h5 class="ff-inter fs-md text-474749">SolPunks</h5>
-                                                    </div>
-                                                    <p><img src="/assets/img/svg/comment.svg" alt="comment">15</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="px-3">
-                                            <button class="ff-inter fs-lg fw-medium text-fffffff border-0 show-btn">Show
-                                                All</button>
-                                        </div>
+                            <div class="new-nft-box d-flex align-items-center ms-3 mb-2">
+                                <img class="me-2 pe-1" src="/assets/img/png/new-nft-2.png" alt="new-nft">
+                                <div class="w-100">
+                                    <p class="ff-inter fw-medium fs-xsm text-7c7c7c mb-2">Metroverse Genesis</p>
+                                    <h2 class="fs-lg ff-inter fw-bold text-474749 mb-2 mt-0">Block #1460</h2>
+                                    <p class="fs-xsm fw-medium ff-inter text-7c7c7c mb-2">Owned by <span
+                                            class="fs-xsm fw-medium ff-inter text-ffc881">BabyKee</span></p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="ff-inter fs-lg fw-medium text-130f26 mb-0"><span><img
+                                                    src="/assets/img/svg/heart/Heart.svg" alt="heart"></span>1K</p>
+                                        <p class="ff-inter fs-lg fw-medium text-130f26 mb-0"><span><img
+                                                    src="/assets/img/svg/comment.svg" alt="comment"></span>21</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="new-nft-box d-flex align-items-center ms-3">
+                                <img class="me-2 pe-1" src="/assets/img/png/new-nft-3.png" alt="new-nft">
+                                <div class="w-100">
+                                    <p class="ff-inter fw-medium fs-xsm text-7c7c7c mb-2">Metroverse Genesis</p>
+                                    <h2 class="fs-lg ff-inter fw-bold text-474749 mb-2 mt-0">Block #1460</h2>
+                                    <p class="fs-xsm fw-medium ff-inter text-7c7c7c mb-2">Owned by <span
+                                            class="fs-xsm fw-medium ff-inter text-ffc881">BabyKee</span></p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="ff-inter fs-lg fw-medium text-130f26 mb-0"><span><img
+                                                    src="/assets/img/svg/heart/Heart.svg" alt="heart"></span>1K</p>
+                                        <p class="ff-inter fs-lg fw-medium text-130f26 mb-0"><span><img
+                                                    src="/assets/img/svg/comment.svg" alt="comment"></span>21</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
-            </div>
+                    <div class="row">
+                        <div class="col-xxl-8 col-12">
+                            <div class="d-flex justify-content-between align-items-center mt-5 pt-3 mb-3">
+                                <h3 class="fs-xlg ff-inter fw-semibold text-4f4f4f">Top Collections</h3>
+                                <p class="fs-md ff-inter fw-semibold text-4f4f4f mb-0 cursor-pointer"> View All<span
+                                        class="ps-1 ms-2"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.167 7.81706L3.16699 7.81706" stroke="#130F26"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M9.13379 3.80083L13.1671 7.81683L9.13379 11.8335" stroke="#130F26"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span></p>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-4 col-sm-6 col-12 mb-5 mb-xl-0">
+                                    <div class="position-relative collection overflow-hidden">
+                                        <img class="collection-img w-100" src="/assets/img/png/collection-1.png"
+                                            alt="1">
+                                        <div class="position-absolute collection-abs collection-box ">
+                                            <div class="position-relative">
+                                                <div class="d-flex justify-content-center">
+                                                    <img class="position-absolute small-img-abs"
+                                                        src="/assets/img/png/collection-a.png" alt="collection">
+                                                </div>
+                                                <h2 class="ff-inter fs-xlg fw-semibold text-fffffff text-center mt-4">
+                                                    Jozo
+                                                    Gators</h2>
+                                                <p class="fs-xmd ff-inter text-fffffff text-center">1.1K</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-sm-6 col-12 mb-5 mb-xl-0">
+                                    <div class="position-relative collection overflow-hidden">
+                                        <img class="collection-img w-100" src="/assets/img/png/collection-2.png"
+                                            alt="1">
+                                        <div class="position-absolute collection-abs collection-box ">
+                                            <div class="position-relative">
+                                                <div class="d-flex justify-content-center">
+                                                    <img class="position-absolute small-img-abs"
+                                                        src="/assets/img/png/collection-b.png" alt="collection">
+                                                </div>
+                                                <h2 class="ff-inter fs-xlg fw-semibold text-fffffff text-center mt-4">
+                                                    PXN:
+                                                    Ghost
+                                                    Division</h2>
+                                                <p class="fs-xmd ff-inter text-fffffff text-center">10K</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-sm-6 col-12 mb-5 mb-xl-0">
+                                    <div class="position-relative collection overflow-hidden">
+                                        <img class="collection-img w-100" src="/assets/img/png/collection-3.png"
+                                            alt="1">
+                                        <div class="position-absolute collection-abs collection-box ">
+                                            <div class="position-relative">
+                                                <div class="d-flex justify-content-center">
+                                                    <img class="position-absolute small-img-abs"
+                                                        src="/assets/img/png/collection-c.png" alt="collection">
+                                                </div>
+                                                <h2 class="ff-inter fs-xlg fw-semibold text-fffffff text-center mt-4">
+                                                    Ragnarok
+                                                    Meta</h2>
+                                                <p class="fs-xmd ff-inter text-fffffff text-center">7.8K</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mt-5 mb-3">
+                                <h3 class="fs-xlg ff-inter fw-semibold text-4f4f4f">Trendings NFTs</h3>
+                                <p class="ff-inter fs-md fw-semibold text-4f4f4f mb-0 cursor-pointer">Marketplace
+                                    <span class="ps-1 ms-2"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.167 7.81706L3.16699 7.81706" stroke="#130F26"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M9.13379 3.80083L13.1671 7.81683L9.13379 11.8335" stroke="#130F26"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-4 col-sm-6 mb-5 mb-xl-0">
+                                    <div class="position-relative collection overflow-hidden">
+                                        <img class="collection-img w-100" src="/assets/img/png/nft-1.png" alt="nft">
+                                        <div class="position-absolute collection-abs collection-box ">
+                                            <div class="position-relative">
+                                                <div class="d-flex justify-content-center">
+                                                    <img class="position-absolute small-img-abs"
+                                                        src="/assets/img/png/nft-a.png" alt="nft">
+                                                </div>
+                                                <h2 class="ff-inter fs-xlg fw-semibold text-fffffff text-center mt-4">
+                                                    Noryoz
+                                                </h2>
+                                                <p class="fs-xmd ff-inter text-fffffff text-center">1.8K</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-sm-6 mb-5 mb-xl-0">
+                                    <div class="position-relative collection overflow-hidden">
+                                        <img class="collection-img w-100" src="/assets/img/png/nft-2.png" alt="nft">
+                                        <div class="position-absolute collection-abs collection-box ">
+                                            <div class="position-relative">
+                                                <div class="d-flex justify-content-center">
+                                                    <img class="position-absolute small-img-abs"
+                                                        src="/assets/img/png/nft-b.png" alt="nft">
+                                                </div>
+                                                <h2 class="ff-inter fs-xlg fw-semibold text-fffffff text-center mt-4">
+                                                    Bored
+                                                    Ape
+                                                    Solana Club</h2>
+                                                <p class="fs-xmd ff-inter text-fffffff text-center">6.0K</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-sm-6 mb-5 mb-xl-0">
+                                    <div class="position-relative collection overflow-hidden">
+                                        <img class="collection-img w-100" src="/assets/img/png/nft-3.png" alt="nft">
+                                        <div class="position-absolute collection-abs collection-box ">
+                                            <div class="position-relative">
+                                                <div class="d-flex justify-content-center">
+                                                    <img class="position-absolute small-img-abs"
+                                                        src="/assets/img/png/nft-c.png" alt="nft">
+                                                </div>
+                                                <h2 class="ff-inter fs-xlg fw-semibold text-fffffff text-center mt-4">
+                                                    Boryoku
+                                                    Dragonz</h2>
+                                                <p class="fs-xmd ff-inter text-fffffff text-center">7.8K</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-4 col-12">
+                            <div class="pt-4">
+                                <div class="history-box ms-3 mt-5">
+                                    <div class="px-4">
+                                        <div class="d-flex justify-content-between align-items-center mb-4 pb-2">
+                                            <h2 class="ff-inter fs-xlg fw-medium text-4f4f4f">History</h2>
+                                            <select
+                                                class="ff-inter fs-md text-4f4f4f last-month-btn cursor-pointer">Last
+                                                Month <span><svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.6673 1.66663L6.00065 6.33329L1.33398 1.66663"
+                                                            stroke="#7C7C7C" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </span>
+                                                <option>Last Month</option>
+                                                <option>Last 3 Month</option>
+                                                <option>Last 6 Month</option>
+                                                <option>Last Year</option>
+                                            </select>
+                                        </div>
+                                        <div class="d-flex align-items-center mb-3">
+                                            <img class="me-2 pe-1" src="/assets/img/svg/history-1.svg" alt="history">
+                                            <div class="d-flex align-items-center justify-content-between w-100">
+                                                <div>
+                                                    <h4 class="ff-inter fs-lg fw-bold text-474749">Cet #6882</h4>
+                                                    <h5 class="ff-inter fs-md text-474749">Cets on Creck</h5>
+                                                </div>
+                                                <p class="ms-3"><img src="/assets/img/svg/comment.svg" alt="comment">250
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center mb-3">
+                                            <img class="me-2 pe-1" src="/assets/img/svg/history-2.svg" alt="history">
+                                            <div class="d-flex align-items-center justify-content-between w-100">
+                                                <div>
+                                                    <h4 class="ff-inter fs-lg fw-bold text-474749">Bored Ape #981
+                                                    </h4>
+                                                    <h5 class="ff-inter fs-md text-474749">Bored Ape Solana Club
+                                                    </h5>
+                                                </div>
+                                                <p><img src="/assets/img/svg/comment.svg" alt="comment">38</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center mb-5 pb-4">
+                                            <img class="me-2 pe-1" src="/assets/img/svg/history-3.svg" alt="history">
+                                            <div class="d-flex align-items-center justify-content-between w-100">
+                                                <div>
+                                                    <h4 class="ff-inter fs-lg fw-bold text-474749">SolPunk #7803
+                                                    </h4>
+                                                    <h5 class="ff-inter fs-md text-474749">SolPunks</h5>
+                                                </div>
+                                                <p><img src="/assets/img/svg/comment.svg" alt="comment">15</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="px-3">
+                                        <button class="ff-inter fs-lg fw-medium text-fffffff border-0 show-btn">Show
+                                            All</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
     <!-- =====jquery link==== -->
@@ -604,7 +585,7 @@
     </script>
     <script>
         const a = document.getElementById("mySidenav")
-        function navresponsive() {
+        function opennav() {
             a.classList.add("show")
         }
         function closenav() {
